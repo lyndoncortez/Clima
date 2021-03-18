@@ -93,6 +93,18 @@
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jY-Jz-9Qu">
                                         <rect key="frame" x="134" y="352.5" width="240" height="465.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear Sky" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuz-uW-fsV">
+                                                <rect key="frame" x="167.5" y="17" width="72.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vuz-uW-fsV" firstAttribute="top" secondItem="1jY-Jz-9Qu" secondAttribute="top" constant="17" id="Qsu-GC-tu3"/>
+                                            <constraint firstAttribute="trailing" secondItem="vuz-uW-fsV" secondAttribute="trailing" id="mtl-Dx-s4N"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -117,6 +129,7 @@
                     <connections>
                         <outlet property="cityLabel" destination="RfR-x8-ADB" id="Fak-4g-BEx"/>
                         <outlet property="conditionImageView" destination="Sqn-e2-lIW" id="LZj-63-EV3"/>
+                        <outlet property="conditionLabel" destination="vuz-uW-fsV" id="IZp-0z-d2s"/>
                         <outlet property="searchTextField" destination="tfE-Ij-uCj" id="tph-0e-sjQ"/>
                         <outlet property="temperatureLabel" destination="EgM-ve-WyQ" id="afc-6f-Roy"/>
                     </connections>
@@ -132,7 +145,7 @@
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="sun.max" catalog="system" width="128" height="124"/>
         <namedColor name="weatherColor">
-            <color red="0.1777291" green="0.25380653139999998" blue="0.30981191990000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.17800000309944153" green="0.25400000810623169" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
